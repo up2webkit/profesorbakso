@@ -49,8 +49,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Meta Pixel Code telah dipindahkan ke dalam Google Tag Manager -->
-
     <script>
         // Safeguard untuk menghindari error saat render awal
         if (!window.tailwind) window.tailwind = {};
@@ -181,7 +179,7 @@
                     <a href="#testimoni" class="text-dark font-medium hover:text-primary transition-colors">Testimoni</a>
                     <a href="#lokasi" class="text-dark font-medium hover:text-primary transition-colors">Lokasi</a>
                     
-                    <button onclick="scrollToLocation(); trackEvent('FindLocation');" class="bg-primary hover:bg-secondary text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-primary/30 transition-all transform hover:-translate-y-0.5">
+                    <button onclick="scrollToLocation();" class="bg-primary hover:bg-secondary text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-primary/30 transition-all transform hover:-translate-y-0.5">
                         Datang Sekarang
                     </button>
                 </div>
@@ -203,7 +201,7 @@
                 <a href="#fasilitas" class="block px-3 py-3 rounded-md text-base font-medium text-dark hover:bg-cream hover:text-primary">Fasilitas</a>
                 <a href="#testimoni" class="block px-3 py-3 rounded-md text-base font-medium text-dark hover:bg-cream hover:text-primary">Testimoni</a>
                 <a href="#lokasi" class="block px-3 py-3 rounded-md text-base font-medium text-dark hover:bg-cream hover:text-primary">Lokasi</a>
-                <button onclick="scrollToLocation(); trackEvent('FindLocation');" class="mt-4 w-full text-center bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-md">
+                <button onclick="scrollToLocation();" class="mt-4 w-full text-center bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-md">
                     Datang Sekarang
                 </button>
             </div>
@@ -231,18 +229,18 @@
                     
                     <!-- CTAs -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="https://www.google.com/maps/place/6%C2%B012'49.7%22S+106%C2%B046'28.7%22E/@-6.2136177,106.7728701,18.24z/data=!4m4!3m3!8m2!3d-6.2138013!4d106.7746361?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" onclick="trackEvent('FindLocation')" class="w-full sm:w-auto bg-white hover:bg-cream text-primary px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-black/10 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <a href="https://www.google.com/maps/place/6%C2%B012'49.7%22S+106%C2%B046'28.7%22E/@-6.2136177,106.7728701,18.24z/data=!4m4!3m3!8m2!3d-6.2138013!4d106.7746361?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="w-full sm:w-auto bg-white hover:bg-cream text-primary px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-black/10 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
                             <span><i class="fas fa-map-marker-alt"></i></span> Saya Mau Makan di Sini
                         </a>
                     </div>
 
                     <!-- Badges Grid -->
-                    <div class="mt-10 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-3 text-sm font-medium text-white/90">
-                        <div class="flex items-center gap-2"><i class="fas fa-check-circle text-white"></i> Bersertifikat Halal</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-check-circle text-white"></i> Resep Sejak 1980</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-check-circle text-white"></i> 100% Daging Sapi Asli</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-check-circle text-white"></i> Homemade</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-check-circle text-white"></i> Enak, Sehat & Bersih</div>
+                    <div class="mt-10 flex flex-col items-center sm:flex-row sm:flex-wrap sm:justify-center lg:flex-row lg:flex-wrap lg:justify-start gap-x-6 gap-y-3 text-sm font-medium text-white/90">
+                        <div class="flex items-center gap-2 w-full justify-center sm:w-auto"><i class="fas fa-check-circle text-white"></i> Bersertifikat Halal</div>
+                        <div class="flex items-center gap-2 w-full justify-center sm:w-auto"><i class="fas fa-check-circle text-white"></i> 100% Daging Sapi Asli</div>
+                        <div class="flex items-center gap-2 w-full justify-center sm:w-auto"><i class="fas fa-check-circle text-white"></i> Enak, Sehat & Bersih</div>
+                        <div class="flex items-center gap-2 w-full justify-center sm:w-auto"><i class="fas fa-check-circle text-white"></i> Resep Sejak 1980</div>
+                        <div class="flex items-center gap-2 w-full justify-center sm:w-auto"><i class="fas fa-check-circle text-white"></i> Homemade</div>
                     </div>
                 </div>
 
@@ -349,7 +347,7 @@
             </div>
             
             <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white" data-aos="zoom-in" data-aos-delay="100">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMtIOc8obi32TEJ0NdkXEZOt3A6W1gftP24T-yBusf_w9M_Q3KIKlSyhQTW-Yk8SBFMgTQfu0j-7YmLQoa7xIh3vAEOeKRMORys81frF9AUi5SqrCnWjt6u06eocBIqlyaji58l-XqgrJWo0vUx5hKNPsCgI20tibakHbqdI7L3u7gHxgHBqAPYBXiDXI/s2000/Menu%20Prof%20Bakso%202.jpg" alt="Brosur Daftar Menu Profesor Bakso" class="w-full h-auto object-contain" loading="lazy">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvRmm3XoZaSHqGH6pp_oXtH0A6BfBmBvaJ6RAE_EXexHm_eM3l1WeJyeF8KBYqnzJfyqwmsyue2_BrAMMPvAhLhn5XgbUEEq162uYFdwRfUT27me0gKVXyEO_AF3GZexGoCJKe_pPsTkJrAwsQMol_wR92f6S3XKnZyEKqhrfz1R9YUO6nERWKISKi06o/s2000/Menu%20prof%20bakso3.jpg" alt="Brosur Daftar Menu Profesor Bakso" class="w-full h-auto object-contain" loading="lazy">
             </div>
         </div>
     </section>
@@ -396,8 +394,9 @@
                 <p class="text-white/90 text-lg max-w-2xl mx-auto mb-4">Dokumentasi kunjungan dan momen spesial tokoh publik saat menikmati sajian Profesor Bakso.</p>
             </div>
 
-            <!-- Manual Scroll Artis (Kini Menggunakan HTML Murni agar tidak kempes) -->
+            <!-- Manual Scroll Artis (Native HTML) -->
             <div class="manual-scroll-container gap-6 px-4 md:px-0" id="artis-container" data-direction="left">
+                
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTzbZXuggeRLwwGIzKNdt69V-mI5AsybSIgwnKKELGxMXSP4s52PQNC7Cfqyaois74ysHBYP_wdjXhTUE0XAezgXie3U9NaUyNqF1GMZ-w6y4KT-Q0t7O_8tiGiWnSQOv-V6ysermShHnS3Mhy0kf29f_hc5mgkK-1KnfuQJSyOcWL740EnQ-ncu0-03M/s1288/foto%20artis_upscale_atta.jpg" alt="Foto Atta Halilintar di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -407,6 +406,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKAZoCUVRUb7uB0jjVxLHKZUl7vMNzT_nrP3mX5bvGl_Jnb5PkLpkUG1JhRLbt04EOl17ol9DMlDa_l76JR96E6WHJuYTP3f0hadgs29LbxOBjrlbqzu44CkGHA4wdCsdNrt7mUV9xTw1iFxyqinY87AuQMfk09oOsIidSyH6UqsPNkkWi-GGdz3LioSc/s1386/foto%20artis_upscale_elvi.jpg" alt="Foto Elvy Sukaesih di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -416,6 +416,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg54YxLQjTTbmEkfJlevRZcKYS_WJK5Jwi8phOPeOWzSv0mnSZrU6E7hEIOLu2QSJYZcAt4FmSNyDztYwg_dQLmpU4pjRze7zJ2pLIlVlvrMgHRWWZDxU2ItKYndfpw3FqumdWl27r9yKPxdIVTB0BWA-j6R2j6ERXFMWkY0tvawwOKizeZRKCa_HBJ5pY/s1386/foto%20artis_upscale_haikal%20kamil2.jpg" alt="Foto Haikal Kamil di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -425,6 +426,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwefwMWloafmyEOwbhnQobFZMZoU8-9xE_pfluzSdVSsezCrlBxfGtPi3s3m8N-dWy51YEWCwXGKrI63UIMJ1tS1nffe54G8MJnJOl4pxys_nnthVGTuyI1TfK1QvNXkPXGtZ_SHikaDz1e-6FGzBo4hk9KcAiu5_-gmqbASpn1iW9G8ifAPyOZa-4pMw/s1412/foto%20artis_upscale_iis.jpg" alt="Foto Iis Dahlia di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -434,6 +436,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlLQSUwG9DVh_26PN4gAYgzEEEKZpA_dTowUjauPY4Sks23ckQFzOsXX9P7dT_Gn4EqUIQ70npUN_ysoCn7w5GoE-3PqfX7-nXc5J-3EFD8LOdIokohdQTtD7DUpYzbmhSsF-0zQ6ipohpnapafrRXf-aPhzgOk_NKscXHgKXBh5Fd9WvLbN6F8IPxwuk/s1484/foto%20artis_upscale_inul.jpg" alt="Foto Inul Daratista di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -443,6 +446,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1WFPMwlFnCVl8WS7nTDx4l1wIViQ5CfC3pM_kKWE9U_zKdW0bQJxrTHyal6AKb74k625HoOBqCvtzGmUwGjg2lUdPXhCLKvOYKOhV4dIFtZX4AUNtehSCKBJEUmo1ArSDvVXJmAhpxM37Cm_W5d7pmGxaCKg7_CDVxX583JfZLasgC7ltWLSyY8Z7lyg/s1670/foto%20artis_upscale_kd.jpg" alt="Foto Kris Dayanti di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -452,6 +456,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl3lKgtmLnTNwzOoCQmem74YajMWyeIOW169AIM5KGYGVsoq4saLA9Nbm-JS_26OFCwdiX0B0rA3GONPauTKKYu5WDXEWFX70NAgE7v1C0ok0PmLoKp27tesx_4A-6UxEdpHsx31cyl3F2er8i08jKUWfqRmu3G0W2vTrtCJvEzPi0tiRw22YMN7GIBZ0/s1486/foto%20artis_upscale_raul.jpg" alt="Foto Raul Lemos di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -461,6 +466,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixi74-K1OkiFq8APy6CbdHar9F9vQ7C9okxa1e-xAyNzc5ogcl-UEpsVces1ZQzoV6yDTpP4RWnhfHkfnIsMNVAiP5sR0gTpCKAgjgBL4exsCs7f-0mbbg_WXi8gd3h-rhi8d-UiASHL3LMAfnRkM03k4BehBiq7TgijhdX3u95dUeKB4UH2ZfeRexq2I/s1655/foto%20artis_upscale_ryan%20delon.jpg" alt="Foto Ryan Delon di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -470,6 +476,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjonWlQCDgwO8j59kPO3vGQFwBh4bYE93mBPbySAkUyTpaX33vRPoTmRdf04lTyq9IhIAEDol_VMycti9dZnpYYawgUj5GN-w_OwFr6F2bWUOwY0ihIM3B03-0939Lh5hvFEpgqu-mPkXZWaHd9L31EPU_jssHpJZMTwmK369YJOetN3_bPv9g8n4l-hvw/s1342/foto%20artis_upscale_saskia.jpg" alt="Foto Saskia Adya Mecca di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -479,6 +486,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="w-[280px] md:w-[320px] manual-scroll-item aspect-[3/4] relative rounded-3xl overflow-hidden group transition-all duration-300 hover:shadow-xl bg-white p-3 shadow-lg border border-white/20 select-none pointer-events-none">
                     <div class="w-full h-full relative rounded-2xl overflow-hidden pointer-events-none">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhag7u4BSO51dC_aP_giJvHdY_w1ekxdy7iGUUZ3zMZkfwBIvtmDPPmtSoAybRGFxPv4aHDfH8wvCXkmz484H2r2UQvFLeYhCTlx3N8HhKkYVDbZZwpLN8X9PxJi8mOZ4Kbuas8JkYx51QdeATJymeIobcW-OOd5XKTDw1CohPpy7Viomsf417Et3-uF2c/s1335/foto%20tokoh_Presiden%20ke-6%20Republik%20Indonesia%20adalah%20Susilo%20Bambang%20Yudhoyono%20(SBY).jpg" alt="Foto Presiden Ke-6 RI (SBY) di Profesor Bakso" class="w-full h-full object-cover transition-transform duration-700 pointer-events-none" draggable="false" loading="lazy">
@@ -488,6 +496,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -503,7 +512,7 @@
                 
                 <div class="lg:col-span-7 h-[400px] lg:h-auto w-full relative">
                     <iframe 
-                        src="https://maps.google.com/maps?q=-6.2138013,106.7746361&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.398687258908!2d106.77206117589578!3d-6.21367469377402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6d48c8afbc1%3A0x6b4ef8d4072f534!2sProfesor%20Bakso!5e0!3m2!1sid!2sid!4v1714574971206!5m2!1sid!2sid" 
                         class="absolute inset-0 w-full h-full border-0" 
                         allowfullscreen="" 
                         loading="lazy" 
@@ -546,10 +555,10 @@
                     </ul>
 
                     <div class="space-y-4">
-                        <a href="https://www.google.com/maps/place/6%C2%B012'49.7%22S+106%C2%B046'28.7%22E/@-6.2136177,106.7728701,18.24z/data=!4m4!3m3!8m2!3d-6.2138013!4d106.7746361?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" onclick="trackEvent('FindLocation')" class="w-full bg-primary hover:bg-secondary text-white px-6 py-4 rounded-xl font-bold shadow-lg shadow-primary/30 transition-all flex items-center justify-center gap-2">
+                        <a href="https://www.google.com/maps/place/6%C2%B012'49.7%22S+106%C2%B046'28.7%22E/@-6.2136177,106.7728701,18.24z/data=!4m4!3m3!8m2!3d-6.2138013!4d106.7746361?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="w-full bg-primary hover:bg-secondary text-white px-6 py-4 rounded-xl font-bold shadow-lg shadow-primary/30 transition-all flex items-center justify-center gap-2">
                             <i class="fas fa-location-arrow"></i> Buka Google Maps
                         </a>
-                        <a href="https://wa.me/6289665180205?text=Halo%20Profesor%20Bakso,%20saya%20ingin%20bertanya%20seputar%20menu%20dan%20pemesanan." target="_blank" onclick="trackEvent('Contact')" class="w-full bg-[#25D366] hover:bg-[#1DA851] text-white px-6 py-4 rounded-xl font-bold shadow-lg shadow-[#25D366]/30 transition-all flex items-center justify-center gap-2">
+                        <a href="https://wa.me/6289665180205?text=Halo%20Profesor%20Bakso,%20saya%20ingin%20bertanya%20seputar%20menu%20dan%20pemesanan." target="_blank" class="w-full bg-[#25D366] hover:bg-[#1DA851] text-white px-6 py-4 rounded-xl font-bold shadow-lg shadow-[#25D366]/30 transition-all flex items-center justify-center gap-2">
                             <i class="fab fa-whatsapp text-xl"></i> Chat via WhatsApp
                         </a>
                     </div>
@@ -651,14 +660,6 @@
             }
         }
 
-        // Meta Pixel Tracking
-        function trackEvent(eventName) {
-            if (typeof fbq === 'function') {
-                fbq('track', eventName);
-            }
-        }
-        window.addEventListener('load', () => trackEvent('ViewContent'));
-
         // Halal Modal
         function openHalalModal() {
             const modal = document.getElementById('halalModal');
@@ -740,22 +741,27 @@
                 slider.scrollLeft = scrollLeft - walk;
             });
 
-            // Loop Animasi Jalan Otomatis (Frame-by-frame)
+            // Memori penampung desimal agar animasi tidak mandek akibat pembulatan pixel di browser
+            let fractionalScroll = 0; 
+            
             function autoScroll() {
                 if (isAutoScrolling && !isDown) {
-                    if (direction === 'right') {
-                        slider.scrollLeft -= scrollSpeed; // Minus (-) bergerak dari Kiri ke Kanan
+                    fractionalScroll += scrollSpeed;
+                    
+                    if (fractionalScroll >= 1) {
+                        let step = Math.floor(fractionalScroll);
+                        fractionalScroll -= step; 
                         
-                        // Reset balik ke tengah saat sudah mentok di kiri
-                        if (slider.scrollLeft <= 0) {
-                            slider.scrollLeft = slider.scrollWidth / 2;
-                        }
-                    } else {
-                        slider.scrollLeft += scrollSpeed; // Plus (+) bergerak dari Kanan ke Kiri
-                        
-                        // Reset balik ke awal saat sudah mentok di kanan
-                        if (slider.scrollLeft >= slider.scrollWidth / 2) {
-                            slider.scrollLeft = 0;
+                        if (direction === 'right') {
+                            slider.scrollLeft -= step;
+                            if (slider.scrollLeft <= 0) {
+                                slider.scrollLeft = slider.scrollWidth / 2;
+                            }
+                        } else {
+                            slider.scrollLeft += step;
+                            if (slider.scrollLeft >= slider.scrollWidth / 2) {
+                                slider.scrollLeft = 0;
+                            }
                         }
                     }
                 }
